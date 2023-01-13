@@ -1,0 +1,21 @@
+{
+	"version" : 1,
+	"request" : {
+	"url" : "https://superheroapi.com/api/6017671364960111/search/name",
+	"method" : "GET"
+	}
+},
+"response" {
+    "ctype" : "application/json",
+    "tablePath" : "$.businesses[*]",
+    "schema" : {
+    	"response": {
+    		"target" : "$.response",
+    		"type" : "string"
+    	},
+    	"results-for" : {
+    		"target" : "batman",
+    		"type" : "string"
+    	}
+    }
+}
